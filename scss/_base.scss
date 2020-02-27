@@ -1,0 +1,29 @@
+//default styles
+//for custom aos elements look to "boom"
+
+body {
+  background: $bgcolor;
+  font-family: $font;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4 {
+  font-family: $headfont;
+}
+
+header, section{
+  text-align: center;
+  @include box;
+  @extend [data-aos="boom"];
+}
+
+[data-aos="boom"]{
+	opacity: 1;
+	margin-left: 0;
+	transform: rotate(180deg);
+	transition-duration: 5s;
+}
